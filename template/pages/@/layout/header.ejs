@@ -328,11 +328,11 @@ if (header.categories_list) {
             <% categories.forEach(({ slug, name, icon }) => { %>
               <a href="javascript:;" onclick="toggleSidenav('<%= slug %>')">
                 <% if (icon) { %>
-                  <span class="nav__item-icon" style="display: block">
+                  <span class="nav__item-icon">
                     <img
                       src="<%= icon.url %>"
                       alt="<%= icon.alt || name %>"
-                      style="width: 50px; background-size: 100% 100%"
+                      style="width: 40px; background-size: 100% 100%"
                     >
                   </span>
                 <% } %>
