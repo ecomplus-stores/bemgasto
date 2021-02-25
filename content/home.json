@@ -41,13 +41,6 @@
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "collection_id": "5f57fd6e7430f92180ed06f4",
-      "sort": "sales",
-      "title": ""
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
       "collection_id": "5f57fe097430f92180ed0727",
       "sort": "lowest_price"
     },
@@ -56,6 +49,13 @@
       "shuffle": true,
       "collection_id": "5f57fea17430f92180ed0781",
       "sort": "news"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "collection_id": "5f57fd6e7430f92180ed06f4",
+      "sort": "sales",
+      "title": ""
     },
     {
       "type": "collection-shelf",
