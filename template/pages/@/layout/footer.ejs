@@ -180,45 +180,6 @@ const networksWithColors = [
       <% } %>
 
         <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4 box-footer">
-          <a
-            class="footer__title"
-            data-toggle="collapse"
-            href="#footer-pages"
-            role="button"
-            aria-expanded="false"
-            aria-controls="footer-pages"
-          >
-            <%= footer.links_1.title || _.dictionary('pages') %>
-          </a>
-          <div class="collapse" id="footer-pages">
-            <% if (footer.links_1.list_pages) { %>
-              <ul class="footer__links">
-                <% (_.cms('pages') || []).forEach(slug => { %>
-                  <% const { title } = _.cms(`pages/${slug}`) %>
-                  <li>
-                    <i class="fas fa-angle-right"></i>
-                    <a href="/pages/<%= slug %>">
-                      <%= title %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } else { %>
-              <ul class="footer__links">
-                <% footer.links_1.list.forEach(({ url, text }) => { %>
-                  <li>
-                    <i class="fas fa-angle-right"></i>
-                    <a href="<%= url %>">
-                      <%= text %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4 box-footer">
           <a class="footer__title" data-toggle="collapse" href="#footer-pages" role="button" aria-expanded="true" aria-controls="footer-pages">Ajuda e Suporte</a><div class="collapse show" id="footer-pages" style="">
           	<ul class="footer__links">
           		<li><i class="fas fa-angle-right"></i> <a href="/pages/contato">Meus Pedidos</a></li>
@@ -226,6 +187,10 @@ const networksWithColors = [
           		<li><i class="fas fa-angle-right"></i> <a href="/pages/contato">Carrinho de Compras</a></li>
           	</ul>
           </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4 box-footer">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbemgastolj&tabs&width=350&height=200&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=348301289312384" width="350" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
 
     </div>
