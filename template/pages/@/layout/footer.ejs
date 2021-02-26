@@ -1,55 +1,3 @@
-<div class="texto-footer">
-
-	<div class="por-linhas">
-		<div class="title-linhas">Compre por Linhas</div>
-		<div class="box-ico">
-			<ul>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_01.png"></a></li>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_03.png"></a></li>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_05.png"></a></li>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_07.png"></a></li>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_09.png"></a></li>
-				<li><a href="#"><img src="https://www.bemgasto.com.br/img/uploads/ico_11.png"></a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="insta-footer">
-		<div class="title-insta">@bemgasto<span>confira os últimos posts do nosso instagram</span></div>
-		<div id="instagram-feed" class="instagram_feed"></div>
-	</div>
-
-	<div class="logo-footer">
-  		<img src="https://www.bemgasto.com.br/img/uploads/logo-footer.png">
-  	</div>
-	
-	<div class="text-footer"><p>BEM GASTO está presente na sua casa desde 2007. Uma loja que nasce na cidade de Vinhedo com o nome Leci Online loja especializada em equipamentos de informática e variedades, oito anos depois de nossa fundação nos tornamos uma empresa de varejo no Brasil, onde assumimos o compromisso reunir os melhores produtos em decoração para sua casa, com objetivo disseminar a sensação de bem-estar no seu momento de descontração e de lazer, juntando pessoas no mesmo espaço através de nossos produtos decorando seu ambiente. Somos uma empresa familiar que através dos nossos produtos se compromete em oferecer o que há de melhor e mais moderno aos bares, restaurantes, cozinhas e área gourmet, disseminar a sensação de bem-estar e o nosso compromisso.
-	Seja na sua casa ou no seu restaurante ou bar preferido queremos ser para você uma experiência única.</p>
-	</div>
-
-</div>    
-
-
-
-
-
-
-<%
-// load footer options and contacts from content
-const footer = _.cms('footer') || {}
-const contacts = _.cms('contacts') || {}
-
-// social networks handled by contacts
-const networksWithColors = [
-  ['facebook', '#3b5998'],
-  ['youtube', '#ff0000'],
-  ['instagram', '#e1306c'],
-  ['twitter', '#1da1f2'],
-  ['pinterest', '#bd081c'],
-  ['linkedin', '#0073b1']
-]
-%>
-
 <footer class="footer py-3 py-lg-4 py-xl-5">
   <div class="container">
     <div class="row">
@@ -214,7 +162,10 @@ const networksWithColors = [
       <% } %>
 
       <div class="col-12 col-xl order-lg-first">
-
+        <h2 class="footer__title footer__store">
+          <%= footer.description.title || _.settings.name %>
+        </h2>
+        <p><%- footer.description.text || _.settings.description %></p>
 
         <div class="mt-4 mb-3">
           <p class="footer__payment-methods">
