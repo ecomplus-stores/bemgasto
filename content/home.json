@@ -34,14 +34,14 @@
       "sort": "lowest_price"
     },
     {
-      "type": "custom-html",
-      "html": "<div class=\"bg-boteco\"></div>"
-    },
-    {
       "type": "collection-shelf",
       "shuffle": true,
       "collection_id": "5f57fea17430f92180ed0781",
       "sort": "news"
+    },
+    {
+      "type": "custom-html",
+      "html": "<div class=\"bg-boteco\"></div>"
     },
     {
       "type": "collection-shelf",
