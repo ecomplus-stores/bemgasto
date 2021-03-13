@@ -25,7 +25,7 @@
     },
     {
       "type": "custom-html",
-      "html": "<div class=\"banner-centro\">\n  <div class=\"container\">\n\n    <div class=\"mini-banner\">\n      <img src=\"https://www.bemgasto.com.br/img/uploads/mini1.jpg\">\n    </div>\n\n    <div class=\"mini-banner\">\n      <img src=\"https://www.bemgasto.com.br/img/uploads/mini2.jpg\">\n    </div>\n\n  </div>\n</div>"
+      "html": "<div class=\"banner-centro\">\n  <div class=\"container\">\n\n    <div class=\"mini-banner\">\n      <a href=\"https://www.bemgasto.com.br/search?term=harley+davidson\"><img src=\"https://www.bemgasto.com.br/img/uploads/mini1.jpg\"></a>\n    </div>\n\n    <div class=\"mini-banner\">\n      <a href=\"https://www.bemgasto.com.br/search?term=stella\"><img src=\"https://www.bemgasto.com.br/img/uploads/mini2.jpg\"></a>\n    </div>\n\n  </div>\n</div>"
     },
     {
       "type": "collection-shelf",
