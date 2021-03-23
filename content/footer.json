@@ -22,6 +22,10 @@
   },
   "stamps": [
     {
+      "src": "/img/uploads/compre-pelo-whatzapp.png",
+      "link": "https://wa.me/message/3ZACMEVCNOU4D1"
+    },
+    {
       "src": "/img/uploads/ssl-safe.png",
       "alt": "Secure connection"
     },
@@ -45,10 +49,6 @@
       "src": "/img/uploads/madeiramadeira.png",
       "link": "https://www.madeiramadeira.com.br/lojista/bem-gasto",
       "alt": "Parceiro BemGasto"
-    },
-    {
-      "src": "/img/uploads/compre-pelo-whatzapp.png",
-      "link": "https://wa.me/message/3ZACMEVCNOU4D1"
     }
   ],
   "payment_methods": {
